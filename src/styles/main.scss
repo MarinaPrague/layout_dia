@@ -1,7 +1,56 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'header';
+@import 'icon';
+@import 'nav';
+@import 'menu';
+@import 'page';
+@import 'strategic-agency';
+@import 'who';
+@import 'expertise';
+@import 'services';
+@import 'testi';
+@import 'vision';
+@import 'contact';
+@import 'footer';
 
-body {
-  background: $c-gray;
+.page__body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f2f6fa;
+
+  &:has(.page__nav:target) {
+    overflow: hidden;
+  }
+
+  // @media (min-width: 640px) {
+  //   margin: 0 41px;
+  // }
+
+  // @media (min-width: 1024px) {
+  //   margin: 0 54px;
+  // }
+
+  // @media (min-width: 1600px) {
+  //   margin: 0 227px;
+  // }
+
+  // @media (min-width: 2560px) {
+  //   margin: 0 707px;
+  // }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+.main {
+  width: 100%;
 }

@@ -1,0 +1,124 @@
+// @media (min-width: 1024px) {
+// .our-expertise__container {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     gap: 30px;
+//     column-gap: 20px;
+//     // height: 680px;
+// }
+// }
+
+// @media (min-width: 640px) {
+// .our-expertise__container {
+//     column-gap: 41px;
+// }
+// }
+
+.our-expertise {
+  width: 100vw;
+}
+
+.our-expertise__container {
+  background-color: #fff;
+
+  @media (min-width: 640px) {
+    padding: 128px 41px;
+    align-content: center;
+
+    // justify-content: space-between;
+  }
+}
+
+/* Контент */
+
+.our-expertise__content {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  max-width: 1146px;
+  padding: 72px 20px;
+
+  // padding-inline: 20px;
+  // max-width: 1280px;
+  margin: 0;
+
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .our-expertise__content {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    gap: 72px 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Заголовок */
+
+.expertise-title {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #253757;
+}
+
+@media (min-width: 1024px) {
+  .expertise-title {
+    grid-column: 3 / 11;
+    font-size: 52px;
+    line-height: 78px;
+    margin-bottom: 0;
+  }
+}
+
+/* Один блок */
+
+.expertise-number {
+  width: 100%;
+
+  @include hover(transform, scale(1.2));
+}
+
+@media (min-width: 1024px) {
+  .expertise-number {
+    grid-column: span 4;
+    gap: 137px;
+  }
+}
+
+/* Картинка */
+
+.our-expertise__part {
+  width: 166px;
+  height: 166px;
+  object-fit: contain;
+  margin-inline: auto;
+  margin-bottom: 16px;
+}
+
+/* Заголовок и текст */
+
+.expertise__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #253757;
+}
+
+.expertise__text {
+  color: #6c788b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 300px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
