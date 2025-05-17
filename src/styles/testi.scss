@@ -6,6 +6,8 @@
   display: block;
   background-color: #f2f6fa;
   max-width: 1146px;
+  margin: 0 auto;
+  text-align: center;
 
   // @media (min-width: 640px) {
   //   padding-top: 150px;
@@ -27,6 +29,7 @@
   color: #c0cdd7;
   letter-spacing: 3px;
   text-transform: uppercase;
+  justify-self: left;
 }
 
 .testimonials__title {

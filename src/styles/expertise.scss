@@ -1,116 +1,64 @@
-// @media (min-width: 1024px) {
-// .our-expertise__container {
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     gap: 30px;
-//     column-gap: 20px;
-//     // height: 680px;
-// }
-// }
-
-// @media (min-width: 640px) {
-// .our-expertise__container {
-//     column-gap: 41px;
-// }
-// }
-
 .our-expertise {
-  width: 100vw;
-}
-
-.our-expertise__container {
+  width: 100%;
   background-color: #fff;
-
-  @media (min-width: 640px) {
-    padding: 128px 41px;
-    align-content: center;
-
-    // justify-content: space-between;
-  }
-}
-
-/* Контент */
-
-.our-expertise__content {
-  background-color: #fff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 56px;
-  max-width: 1146px;
   padding: 72px 20px;
 
-  // padding-inline: 20px;
-  // max-width: 1280px;
-  margin: 0;
-
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .our-expertise__content {
-    display: grid;
-
-    grid-template-columns: repeat(12, 1fr);
-    gap: 72px 20px;
-    align-items: center;
-    justify-content: space-between;
+  @media (min-width: 640px) {
+    padding: 128px 40px;
   }
 }
 
-/* Заголовок */
+.our-expertise__content {
+  max-width: 1146px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .expertise-title {
   font-size: 44px;
   font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  width: 100%;
   color: #253757;
-}
+  margin-bottom: 56px;
 
-@media (min-width: 1024px) {
-  .expertise-title {
-    grid-column: 3 / 11;
+  @media (min-width: 1024px) {
     font-size: 52px;
     line-height: 78px;
-    margin-bottom: 0;
   }
 }
 
-/* Один блок */
+.expertise-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
 
-.expertise-number {
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px;
+  }
+}
+
+.expertise-card {
   width: 100%;
-
-  @include hover(transform, scale(1.2));
+  max-width: 300px;
+  text-align: center;
 }
-
-@media (min-width: 1024px) {
-  .expertise-number {
-    grid-column: span 4;
-    gap: 137px;
-  }
-}
-
-/* Картинка */
 
 .our-expertise__part {
   width: 166px;
   height: 166px;
   object-fit: contain;
-  margin-inline: auto;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
+  display: block;
+  border-radius: 16px;
 }
-
-/* Заголовок и текст */
 
 .expertise__title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 12px;
   color: #253757;
+  margin-bottom: 12px;
 }
 
 .expertise__text {
@@ -118,7 +66,5 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  max-width: 300px;
-  margin: 0 auto;
   line-height: 1.5;
 }

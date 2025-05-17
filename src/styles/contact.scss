@@ -18,6 +18,8 @@
   display: grid;
   grid-template-columns: 1fr; /* Мобильный: по умолчанию одна колонка */
   gap: 80px;
+  margin: 0 auto;
+  text-align: center;
 
   // padding: 72px 80px 80px;
   max-width: 1146px;
@@ -158,6 +160,7 @@ h2 {
   font-weight: 600;
   line-height: 150%;
   color: #fff;
+  justify-self: left;
 }
 
 .contact__text {
@@ -166,6 +169,7 @@ h2 {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
+  justify-items: left;
 }
 
 .contact__text,
@@ -175,6 +179,7 @@ h2 {
 
 .social {
   padding-top: 16px;
+  justify-self: left;
 }
 
 .social__img {
@@ -185,4 +190,11 @@ h2 {
 
 .social__img:hover {
   background-color: #144ed4;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  justify-content: flex-start; /* <-- ВЫРАВНИВАНИЕ ВЛЕВО */
 }

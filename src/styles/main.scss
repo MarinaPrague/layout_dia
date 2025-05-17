@@ -20,29 +20,13 @@
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-size: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   scroll-behavior: smooth;
   background-color: #f2f6fa;
 
-  &:has(.page__nav:target) {
-    overflow: hidden;
+  &:has(.menu:target) {
+    overflow-y: hidden;
   }
-
-  // @media (min-width: 640px) {
-  //   margin: 0 41px;
-  // }
-
-  // @media (min-width: 1024px) {
-  //   margin: 0 54px;
-  // }
-
-  // @media (min-width: 1600px) {
-  //   margin: 0 227px;
-  // }
-
-  // @media (min-width: 2560px) {
-  //   margin: 0 707px;
-  // }
 
   *,
   *::before,
@@ -51,6 +35,6 @@
   }
 }
 
-.main {
-  width: 100%;
-}
+// .main {
+//   width: 100%;
+// }
