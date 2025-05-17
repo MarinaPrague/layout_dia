@@ -19,12 +19,12 @@ footer {
 
 /* На планшетах и выше (min-width: 640px), если требуется другое расположение, но ваш nav-list-bottom уже имеет flex-direction: row, поэтому для footer__content пока оставим так же */
 
-@media (min-width: 640px) {
-  .footer__content {
-    grid-template-columns: auto 1fr;
-    justify-content: space-between;
-  }
-}
+// @media (min-width: 640px) {
+//   .footer__content {
+//     grid-template-columns: auto 1fr;
+//     justify-content: space-between;
+//   }
+// }
 
 @media (min-width: 1024px) {
   .footer__content {
@@ -69,7 +69,18 @@ footer {
   .nav-list-bottom {
     flex-direction: row; /* На планшетах и выше: горизонтально */
     align-items: center; /* Выравнивание по центру по вертикали */
-    padding-top: 0; /* Уберем отступ сверху, так как теперь он будет рядом с логотипом */
+    padding-top: 24px;
+    padding-left: 0; /* Уберем отступ сверху, так как теперь он будет рядом с логотипом */
+    justify-content: space-between; /* Выравнивание элементов навигации по правому краю в гриде */
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-list-bottom {
+    flex-direction: row; /* На планшетах и выше: горизонтально */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    padding-top: 24px;
+    padding-left: 0; /* Уберем отступ сверху, так как теперь он будет рядом с логотипом */
     justify-content: flex-end; /* Выравнивание элементов навигации по правому краю в гриде */
   }
 }

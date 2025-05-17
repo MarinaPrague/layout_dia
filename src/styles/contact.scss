@@ -19,7 +19,7 @@
   grid-template-columns: 1fr; /* Мобильный: по умолчанию одна колонка */
   gap: 80px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 
   // padding: 72px 80px 80px;
   max-width: 1146px;
@@ -85,12 +85,12 @@ h2 {
 
 .contacts__form__input:hover {
   border-bottom: 1px solid #144ed4;
-  color: #1b2129;
+  color: #fff;
 }
 
 .contacts__form__input:focus {
   border-bottom: 2px solid #144ed4;
-  color: #1b2129;
+  color: #fff;
 }
 
 .contacts__form__input--name,
@@ -160,7 +160,7 @@ h2 {
   font-weight: 600;
   line-height: 150%;
   color: #fff;
-  justify-self: left;
+  place-self: flex-start left;
 }
 
 .contact__text {
