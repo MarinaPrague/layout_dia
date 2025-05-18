@@ -16,31 +16,25 @@
 
 .contacts__content {
   display: grid;
-  grid-template-columns: 1fr; /* Мобильный: по умолчанию одна колонка */
+  grid-template-columns: 1fr;
   gap: 80px;
   margin: 0 auto;
   text-align: left;
-
-  // padding: 72px 80px 80px;
   max-width: 1146px;
 }
 
 @media (min-width: 1024px) {
   .contacts__content {
     grid-template-columns: repeat(12, 1fr);
-
-    // padding: 180px 140px 104px 54px;
-    gap: 80px; /* Вернем большой gap для десктопа, если нужно */
+    margin: 0 auto;
   }
 
   .contacts__group {
-    /* Новый блок для формы и ее заголовка */
-
-    grid-column: 1 / 6; /* Занимает колонки 1-5 */
+    grid-column: 1 / 6;
   }
 
   .contacts__text {
-    grid-column: 7 / 12; /* Блок "Contact us" занимает колонки 6-12 */
+    grid-column: 8 / 12;
   }
 }
 
@@ -66,7 +60,7 @@ h2 {
   display: grid;
   gap: 16px;
   margin: 0;
-  margin-top: 24px; /* Добавим отступ между заголовком и формой */
+  margin-top: 24px;
 }
 
 .contacts__form__input {
@@ -79,7 +73,7 @@ h2 {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: #2c2c2c;
+  color: #144ed4;
   outline: none;
 }
 
@@ -100,6 +94,14 @@ h2 {
 
 .contacts__form__input--message {
   resize: none;
+}
+
+.contacts__form__input:-webkit-autofill,
+.contacts__form__input:-webkit-autofill:focus,
+.contacts__form__input:-webkit-autofill:hover {
+  color: #fff;
+  border: none;
+  border-bottom: 1px dotted #144ed4;
 }
 
 .contacts__form__button {
@@ -196,5 +198,5 @@ h2 {
   display: flex;
   gap: 16px;
   padding-top: 16px;
-  justify-content: flex-start; /* <-- ВЫРАВНИВАНИЕ ВЛЕВО */
+  justify-content: flex-start;
 }

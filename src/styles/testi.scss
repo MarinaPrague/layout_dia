@@ -8,19 +8,6 @@
   max-width: 1146px;
   margin: 0 auto;
   text-align: center;
-
-  // @media (min-width: 640px) {
-  //   padding-top: 150px;
-  //   padding-bottom: 148px;
-  // }
-
-  // @media (min-width: 1024px) {
-  //   padding-bottom: 186px;
-  // }
-
-  // @media (min-width: 1280px) {
-  //   padding-bottom: 148px;
-  // }
 }
 
 .testimonials__top-title {
@@ -37,6 +24,7 @@
   font-weight: 600;
   color: #253757;
   padding-top: 16px;
+  text-align: left;
 }
 
 /* Контейнер с карточками */

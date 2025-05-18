@@ -61,6 +61,10 @@
   vertical-align: middle;
   padding-top: 24px;
   text-align: center;
+
+  @media (min-width: 640px) {
+    padding-bottom: 64px;
+  }
 }
 
 .button {
