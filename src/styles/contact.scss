@@ -96,12 +96,14 @@ h2 {
   resize: none;
 }
 
-.contacts__form__input:-webkit-autofill,
-.contacts__form__input:-webkit-autofill:focus,
-.contacts__form__input:-webkit-autofill:hover {
-  color: #fff;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
   border: none;
-  border-bottom: 1px dotted #144ed4;
+  border-bottom: 1px solid #144ed4;
+  -webkit-text-fill-color: #144ed4;
+  -webkit-box-shadow: 0 0 0 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .contacts__form__button {
